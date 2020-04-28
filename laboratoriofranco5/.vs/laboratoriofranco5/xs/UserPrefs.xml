@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{772E0410-3C04-493B-8AA3-780F436D1B01}|Default">
+  <MonoDevelop.Ide.ItemProperties.laboratoriofranco5 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="laboratoriofranco5/SMSSender.cs">
+    <Files>
+      <File FileName="laboratoriofranco5/Server.cs" Line="126" Column="1" />
+      <File FileName="laboratoriofranco5/Program.cs" Line="68" Column="1" />
+      <File FileName="laboratoriofranco5/DataBase.cs" Line="83" Column="1" />
+      <File FileName="laboratoriofranco5/MailSender.cs" Line="26" Column="1" />
+      <File FileName="laboratoriofranco5/ChangePasswordEventArgs.cs" Line="13" Column="2" />
+      <File FileName="laboratoriofranco5/RegisterEventArgs.cs" Line="14" Column="2" />
+      <File FileName="laboratoriofranco5/SMSSender.cs" Line="1" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
