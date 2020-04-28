@@ -13,7 +13,12 @@ namespace laboratoriofranco5
             Server server = new Server(database);
             MailSender mailSender = new MailSender();
             SMSSender smsSender = new SMSSender();
-
+            //creacion instancia user
+            User user = new User();
+            //subcripcion metodo OnEmailVerified de Server al evento EmailVerified de User.
+            user.EmailVerified += server.OnEmailVerified;
+            //subscripcion metodo OnEmailSent de User al evento EmailSent de Mailsender
+            mailSender.Emailsent += user.OnEmailSent;
 
             //Suscribir los que escuchan los eventos
             // Notar que para poder realizar las suscripciones es necesario tener instancias de las clases, y que los parametros

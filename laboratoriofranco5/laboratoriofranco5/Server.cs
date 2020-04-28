@@ -122,11 +122,15 @@ namespace laboratoriofranco5
             }
             return "http://pluscorporation.com/verificar-correo.php?=" + usr + "_" + result;
         }
+        //para indicar que se ha verificado el correo al server
+        public void OnEmailVerified(object source, EventArgs args)
+        {
+            Console.WriteLine("El correo de ha verificado correctamente");
+        }
 
-    }   public void OnEmailVerified(object source, EventArgs args)
-    {
 
-        Console.WriteLine("El correo de ha verificado correctamente");
+
+
     }
-    //
+
 }

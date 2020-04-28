@@ -7,7 +7,7 @@ namespace laboratoriofranco5
 {
     public class MailSender
     {
-        //Creamos el delegate para enviar el correo EmailSent
+        //Creamos el delegate 
         public delegate void Emailsenter(object source, EventArgs args);
         //declaramos evento
         public event Emailsenter Emailsent;
@@ -20,6 +20,7 @@ namespace laboratoriofranco5
             }
 
         }
+
         public void OnRegistered(object source, RegisterEventArgs e)
         {
             Thread.Sleep(2000);

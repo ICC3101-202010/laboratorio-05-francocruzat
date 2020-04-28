@@ -20,7 +20,7 @@ namespace laboratoriofranco5
         }
         public void OnEmailSent(object source, EventArgs args)
         {
-            Console.Write("Deseo verificar el correo, responda si o no");
+            Console.Write("Desea verificar el correo, responda si o no");
             Verificar = Console.ReadLine();
             if (Verificar == "si")
             {
