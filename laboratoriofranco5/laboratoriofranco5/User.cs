@@ -3,7 +3,8 @@ namespace laboratoriofranco5
 {
     public class User
     {
-        string Vc;
+        string Verificar;
+
         //Creamos el delegate para el evento EmailVerified
         public delegate void VerifiedEmail(object source,EventArgs args);
         //declaramos evento
@@ -13,18 +14,25 @@ namespace laboratoriofranco5
         {
             if (EmailVerified != null)
             {
-                Console.WriteLine("Desea verificar su correo? Ingrese si o no");
-                Vc = Console.ReadLine();
-                if (Vc == "si")
-                {
-                    //mandamos la señal
-                    EmailVerified(this, EventArgs.Empty);
-                }
+                EmailVerified(this, EventArgs.Empty);
             }
 
+        }
+        public void OnEmailSent(object source, EventArgs args)
+        {
+            Console.Write("Deseo verificar el correo, responda si o no");
+            Verificar = Console.ReadLine();
+            if (Verificar == "si")
+            {
+                OnEmailVerified();
+            }
+
+            else
+            {
+                Console.WriteLine("No problem");
+            }
 
         }
-        public void OnEmailSent(object source, )
 
 
 

@@ -80,6 +80,8 @@ namespace laboratoriofranco5
             }
         }
 
+
+
         // Realiza el cambio de contrasena
         public void ChangePassword()
         {
@@ -121,5 +123,10 @@ namespace laboratoriofranco5
             return "http://pluscorporation.com/verificar-correo.php?=" + usr + "_" + result;
         }
 
+    }   public void OnEmailVerified(object source, EventArgs args)
+    {
+
+        Console.WriteLine("El correo de ha verificado correctamente");
     }
+    //
 }
